@@ -1,0 +1,93 @@
+<!--breadcrumb-->
+<div class="page-breadcrumb d-none d-sm-flex align-items-center mb-3">
+  <div class="breadcrumb-title pe-3">eCommerce</div>
+  <div class="ps-3">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb mb-0 p-0">
+        <li class="breadcrumb-item"><a href="#" (click)="$event.preventDefault()"><i class="bx bx-home-alt"></i></a>
+        </li>
+        <li class="breadcrumb-item active" aria-current="page">Orders</li>
+      </ol>
+    </nav>
+  </div>
+  <div class="ms-auto">
+    <div class="btn-group">
+      <button type="button" class="btn btn-primary">Settings</button>
+      <button type="button" class="btn btn-primary split-bg-primary dropdown-toggle dropdown-toggle-split"
+              data-bs-toggle="dropdown"><span class="visually-hidden">Toggle Dropdown</span>
+      </button>
+      <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-end"><a class="dropdown-item" href="#"
+                                                                             (click)="$event.preventDefault()">Action</a>
+        <a class="dropdown-item" href="#" (click)="$event.preventDefault()">Another action</a>
+        <a class="dropdown-item" href="#" (click)="$event.preventDefault()">Something else here</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#" (click)="$event.preventDefault()">Separated link</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!--end breadcrumb-->
+
+<div class="card">
+  <div class="card-body">
+    <div class="d-lg-flex align-items-center mb-4 gap-3">
+      <div class="position-relative">
+        <a href="#"
+           class="btn btn-primary radius-30 mt-2 mt-lg-0">
+          <i class="bx bxs-plus-square"></i>
+          Agregar Orden
+        </a>
+      </div>
+      <div class="position-relative">
+        <input type="text"
+               class="form-control ps-5 radius-30"
+               placeholder="Buscar Orden">
+        <span class="position-absolute top-50 product-show translate-middle-y">
+                <i class="bx bx-search"></i>
+              </span>
+      </div>
+    </div>
+    <div class="table-responsive">
+      <div _ngcontent-cix-c246="" class="d-flex align-items-center theme-icons shadow-sm p-2 cursor-pointer rounded">
+        <div _ngcontent-cix-c246="" class="font-22 text-primary"><i _ngcontent-cix-c246="" class="lni lni-cog"></i>
+        </div>
+        <div _ngcontent-cix-c246="" class="ms-2"><span _ngcontent-cix-c246="">cog</span></div>
+      </div>
+      <div _ngcontent-fki-c148="" class="card-body">
+        <table _ngcontent-fki-c148="" class="table mb-0 table-dark table-striped">
+          <thead _ngcontent-fki-c148="">
+          <tr _ngcontent-fki-c148="">
+            <th _ngcontent-fki-c148="" scope="col">#</th>
+            <th _ngcontent-fki-c148="" scope="col">First</th>
+            <th _ngcontent-fki-c148="" scope="col">Last</th>
+            <th _ngcontent-fki-c148="" scope="col">Handle</th>
+          </tr>
+          </thead>
+          <tbody _ngcontent-fki-c148="">
+          <tr _ngcontent-fki-c148="">
+            <th _ngcontent-fki-c148="" scope="row">1</th>
+            <td _ngcontent-fki-c148="">Mark</td>
+            <td _ngcontent-fki-c148="">Otto</td>
+            <td _ngcontent-fki-c148="">@mdo</td>
+          </tr>
+          <tr _ngcontent-fki-c148="">
+            <th _ngcontent-fki-c148="" scope="row">2</th>
+            <td _ngcontent-fki-c148="">Jacob</td>
+            <td _ngcontent-fki-c148="">Thornton</td>
+            <td _ngcontent-fki-c148="">@fat</td>
+          </tr>
+          <tr _ngcontent-fki-c148="">
+            <th _ngcontent-fki-c148="" scope="row">3</th>
+            <td _ngcontent-fki-c148="" colspan="2">Larry the Bird</td>
+            <td _ngcontent-fki-c148="">@twitter</td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<app-orden-screen>
+</app-orden-screen>
+
