@@ -14,10 +14,10 @@
     <div class="btn-group">
       <button type="button" class="btn btn-primary">Settings</button>
       <button type="button" class="btn btn-primary split-bg-primary dropdown-toggle dropdown-toggle-split"
-              data-bs-toggle="dropdown"><span class="visually-hidden">Toggle Dropdown</span>
+        data-bs-toggle="dropdown"><span class="visually-hidden">Toggle Dropdown</span>
       </button>
       <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-end"><a class="dropdown-item" href="#"
-                                                                             (click)="$event.preventDefault()">Action</a>
+          (click)="$event.preventDefault()">Action</a>
         <a class="dropdown-item" href="#" (click)="$event.preventDefault()">Another action</a>
         <a class="dropdown-item" href="#" (click)="$event.preventDefault()">Something else here</a>
         <div class="dropdown-divider"></div>
@@ -32,19 +32,16 @@
   <div class="card-body">
     <div class="d-lg-flex align-items-center mb-4 gap-3">
       <div class="position-relative">
-        <a href="#"
-           class="btn btn-primary radius-30 mt-2 mt-lg-0">
+        <a href="#" class="btn btn-primary radius-30 mt-2 mt-lg-0">
           <i class="bx bxs-plus-square"></i>
           Agregar Orden
         </a>
       </div>
       <div class="position-relative">
-        <input type="text"
-               class="form-control ps-5 radius-30"
-               placeholder="Buscar Orden">
+        <input type="text" class="form-control ps-5 radius-30" placeholder="Buscar Orden">
         <span class="position-absolute top-50 product-show translate-middle-y">
-                <i class="bx bx-search"></i>
-              </span>
+          <i class="bx bx-search"></i>
+        </span>
       </div>
     </div>
     <div class="table-responsive">
@@ -53,34 +50,83 @@
         </div>
         <div _ngcontent-cix-c246="" class="ms-2"><span _ngcontent-cix-c246="">cog</span></div>
       </div>
-      <div _ngcontent-fki-c148="" class="card-body">
-        <table _ngcontent-fki-c148="" class="table mb-0 table-dark table-striped">
-          <thead _ngcontent-fki-c148="">
-          <tr _ngcontent-fki-c148="">
-            <th _ngcontent-fki-c148="" scope="col">#</th>
-            <th _ngcontent-fki-c148="" scope="col">First</th>
-            <th _ngcontent-fki-c148="" scope="col">Last</th>
-            <th _ngcontent-fki-c148="" scope="col">Handle</th>
-          </tr>
+      <div class="table-responsive">
+        <table class="table mb-0">
+          <thead class="table-light">
+            <tr>
+              <th>Cliente</th>
+              <th>Fecha de Orden</th>
+              <th>Total de canastillas</th>
+              <th>Detalles</th>
+              <th>Acciones</th>
+            </tr>
           </thead>
-          <tbody _ngcontent-fki-c148="">
-          <tr _ngcontent-fki-c148="">
-            <th _ngcontent-fki-c148="" scope="row">1</th>
-            <td _ngcontent-fki-c148="">Mark</td>
-            <td _ngcontent-fki-c148="">Otto</td>
-            <td _ngcontent-fki-c148="">@mdo</td>
-          </tr>
-          <tr _ngcontent-fki-c148="">
-            <th _ngcontent-fki-c148="" scope="row">2</th>
-            <td _ngcontent-fki-c148="">Jacob</td>
-            <td _ngcontent-fki-c148="">Thornton</td>
-            <td _ngcontent-fki-c148="">@fat</td>
-          </tr>
-          <tr _ngcontent-fki-c148="">
-            <th _ngcontent-fki-c148="" scope="row">3</th>
-            <td _ngcontent-fki-c148="" colspan="2">Larry the Bird</td>
-            <td _ngcontent-fki-c148="">@twitter</td>
-          </tr>
+
+          <tbody>
+            <tr>
+              <td>
+                <div class="d-flex align-items-center">
+                  <div>
+                    <input class="form-check-input me-3" type="checkbox" value="" aria-label="...">
+                  </div>
+                  <div class="ms-2">
+                    <h6 class="mb-0 font-14">#OS-000986</h6>
+                  </div>
+                </div>
+              </td>
+              <td>Cliente a</td>
+              <td>Bs650.30</td>
+              <td><button type="button" class="btn btn-primary btn-sm radius-30 px-4" (click)="irDetalles()">Ver Detalles</button></td>
+              <td>
+                <div class="d-flex order-actions">
+                  <a href="#" (click)="$event.preventDefault()" class=""><i class='bx bxs-edit'></i></a>
+                  <a href="#" (click)="$event.preventDefault()" class="ms-3"><i class='bx bxs-trash'></i></a>
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <div class="d-flex align-items-center">
+                  <div>
+                    <input class="form-check-input me-3" type="checkbox" value="" aria-label="...">
+                  </div>
+                  <div class="ms-2">
+                    <h6 class="mb-0 font-14">#OS-000457</h6>
+                  </div>
+                </div>
+              </td>
+              <td>Cliente a</td>
+              <td>Bs689.50</td>
+              <td><button type="button" class="btn btn-primary btn-sm radius-30 px-4" (click)="irDetalles()">Ver Detalles</button></td>
+              <td>
+                <div class="d-flex order-actions">
+                  <a href="#" (click)="$event.preventDefault()" class=""><i class='bx bxs-edit'></i></a>
+                  <a href="#" (click)="$event.preventDefault()" class="ms-3"><i class='bx bxs-trash'></i></a>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="d-flex align-items-center">
+                  <div>
+                    <input class="form-check-input me-3" type="checkbox" value="" aria-label="...">
+                  </div>
+                  <div class="ms-2">
+                    <h6 class="mb-0 font-14">#OS-000685</h6>
+                  </div>
+                </div>
+              </td>
+              <td>Cliente a</td>
+              <td>Bs478.60</td>
+              <td><button type="button" class="btn btn-primary btn-sm radius-30 px-4" (click)="irDetalles()">Ver Detalles</button></td>
+              <td>
+                <div class="d-flex order-actions">
+                  <a href="#" (click)="$event.preventDefault()" class=""><i class='bx bxs-edit'></i></a>
+                  <a href="#" (click)="$event.preventDefault()" class="ms-3"><i class='bx bxs-trash'></i></a>
+                </div>
+              </td>
+            </tr>
           </tbody>
         </table>
       </div>
@@ -90,4 +136,3 @@
 
 <app-orden-screen>
 </app-orden-screen>
-

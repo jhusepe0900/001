@@ -1,8 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit, ViewChild} from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
-import {User} from '../../../servicios/user';
-import {LoginuserService} from '../../../servicios/loginService/loginuser.service';
-
+import { User } from '../../../servicios/user';
+import { LoginuserService } from '../../../servicios/loginService/loginuser.service';
 
 @Component({
   selector: 'app-sign-in',
@@ -10,7 +9,6 @@ import {LoginuserService} from '../../../servicios/loginService/loginuser.servic
   styleUrls: ['./sign-in.component.scss']
 })
 export class SignInComponent implements OnInit {
-
     user: User = new User();
     constructor(
       private router: Router,
@@ -31,16 +29,14 @@ export class SignInComponent implements OnInit {
   // tslint:disable-next-line:typedef
     userLogin(){
       this.loginUserService.loginUser(this.user).subscribe(
-        data => {
+        (data: any) => {
           console.log(this.user);
           // @ts-ignore
           if (data.message === 'No se encontraron resultados'){
-            alert('Intente de nuevo');
           }
           else{
             console.log(data);
-            window.localStorage.setItem('idUsuario', data[0].usuario);
-            window.localStorage.setItem('params', JSON.stringify(data[0]));
+            localStorage.setItem('token', data.token);
             this.irDashboard();
           }
         },

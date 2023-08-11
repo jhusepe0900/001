@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
-import { SidebarService } from '../../shared/sidebar/sidebar.service'
+import { SidebarService } from '../../shared/sidebar/sidebar.service';
 
 @Component({
     selector: 'app-full-layout',

@@ -2,7 +2,6 @@ import {Component, TemplateRef} from '@angular/core';
 
 import {ToastService} from './toast-service';
 
-
 @Component({
   selector: 'app-toasts',
   template: `
@@ -20,10 +19,13 @@ import {ToastService} from './toast-service';
       <ng-template #text>{{ toast.textOrTpl }}</ng-template>
     </ngb-toast>
   `,
-  host: {'class': 'toast-container position-fixed top-0 end-0 p-3', 'style': 'z-index: 1200'}
+  // tslint:disable-next-line:no-host-metadata-property
+  host: {class: 'toast-container position-fixed top-0 end-0 p-3', style: 'z-index: 1200'}
 })
+// tslint:disable-next-line:component-class-suffix
 export class ToastsContainer {
   constructor(public toastService: ToastService) {}
 
+  // tslint:disable-next-line:typedef
   isTemplate(toast) { return toast.textOrTpl instanceof TemplateRef; }
 }

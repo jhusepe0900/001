@@ -28,10 +28,16 @@ export const ROUTES: RouteInfo[] = [
         path: '', title: 'eCommerce', icon: 'bx bx-cart', class: 'sub', badge: '', badgeClass: '', isExternalLink: false,
         submenu: [
             { path: '/ecommerce/products', title: 'Productos', icon: 'bx bx-right-arrow-alt', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
-            { path: '/ecommerce/products-details', title: 'Detalle de productos', icon: 'bx bx-right-arrow-alt', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
+            // { path: '/ecommerce/products-details', title: 'Detalle de productos', icon: 'bx bx-right-arrow-alt', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
             { path: '/ecommerce/add-new-products', title: 'Agregar Nuevo Producto', icon: 'bx bx-right-arrow-alt', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
             { path: '/ecommerce/orders', title: 'Ordenes', icon: 'bx bx-right-arrow-alt', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
-            { path: '/ecommerce/orders', title: 'Entregas', icon: 'bx bx-right-arrow-alt', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
+            { path: '/ecommerce/crear-orden', title: 'Crear Pedido', icon: 'bx bx-right-arrow-alt', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
+            { path: '/ecommerce/compra', title: 'Compra', icon: 'bx bx-right-arrow-alt', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
+            { path: '/ecommerce/saldos', title: 'Saldos', icon: 'bx bx-right-arrow-alt', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
+            { path: '/ecommerce/excel', title: 'Excel', icon: 'bx bx-right-arrow-alt', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
+            { path: '/ecommerce/pantalla-despacho-ventilla', title: 'Pantalla despacho Ruta Ventilla', icon: 'bx bx-right-arrow-alt', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
+            { path: '/ecommerce/pantalla-despacho-tieda-senkata', title: 'Pantalla despacho Tienda Senkata', icon: 'bx bx-right-arrow-alt', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
+            { path: '/ecommerce/pantalla-despacho-ceja', title: 'Pantalla despacho Ruta Ceja', icon: 'bx bx-right-arrow-alt', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
             { path: '/ecommerce/ordenes-confirmadas', title: 'Ordenes Confirmadas', icon: 'bx bx-right-arrow-alt', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] }
         ]
     },

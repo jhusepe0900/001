@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-orders-screen-confirmados',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OrdersScreenConfirmadosComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private router: Router
+  ) { }
 
   ngOnInit(): void {
+  }
+
+  irDetalles(){
+    this.router.navigate(['/ecommerce/detalles-confirmados']);
   }
 
 }

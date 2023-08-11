@@ -12,9 +12,4 @@ export class OrdenScreenComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
-  public recibeDatos(data: any){
-    this.item = data;
-    console.log(data);
-  }
 }

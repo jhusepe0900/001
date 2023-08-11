@@ -1,6 +1,8 @@
 
 import {Component, OnInit} from '@angular/core';
 import { OrdenScreenComponent } from './orden-screen/orden-screen.component';
+import { ToastService } from 'src/app/ng-components/toast/toast-service';
+import { Router } from '@angular/router';
 @Component({  selector: 'app-orders',
   templateUrl: './orders.component.html',
   styleUrls: ['./orders.component.scss']
@@ -8,15 +10,16 @@ import { OrdenScreenComponent } from './orden-screen/orden-screen.component';
 export class OrdersComponent implements OnInit {
   public ordenScreenComponent: OrdenScreenComponent;
   public item: any;
-  constructor() { }
+  constructor(
+    public toastService: ToastService,
+    private router: Router,
+  ) { }
 
   ngOnInit(): void {
-    console.log('imprime automaticamente');
     this.listarPedidos();
   }
   public crearOrden(){
-    this.ordenScreenComponent.recibeDatos(this.item);
-    console.log('PruebaAAAA');
+    this.router.navigate(['/ecommerce/crear-orden']);
   }
   public listarPedidos(){
     console.log('listar pedidos');

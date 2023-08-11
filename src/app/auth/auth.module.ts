@@ -10,6 +10,7 @@ import { LockScreenComponent } from './lock-screen/lock-screen.component';
 import { SigninWithHeaderFooterComponent } from './signin-with-header-footer/signin-with-header-footer.component';
 import { SignupWithHeaderFooterComponent } from './signup-with-header-footer/signup-with-header-footer.component';
 import {FormsModule} from '@angular/forms';
+import {NgComponentsModule} from '../ng-components/ng-components.module';
 
 
 
@@ -22,10 +23,11 @@ import {FormsModule} from '@angular/forms';
     LockScreenComponent,
     SigninWithHeaderFooterComponent,
     SignupWithHeaderFooterComponent],
-  imports: [
-    CommonModule,
-    AuthRoutingModule,
-    FormsModule
-  ]
+    imports: [
+        CommonModule,
+        AuthRoutingModule,
+        FormsModule,
+        NgComponentsModule
+    ]
 })
 export class AuthModule { }

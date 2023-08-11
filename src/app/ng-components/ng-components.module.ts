@@ -27,33 +27,37 @@ import { PopoversComponent } from './popovers/popovers.component';
 
 
 @NgModule({
-  declarations: [
-    AccordionComponent, 
-    AlertComponent, 
-    NgbdAlertSelfclosing, 
-    ButtonsComponent, 
-    CarouselComponent, 
-    CollapseComponent, 
-    DatepickerComponent, 
-    DropdownComponent, 
-    ModalComponent,
-    NgbdModalOptions,
-    NavComponent,
-    PaginationComponent,
-    ProgressBarComponent,
-    TableComponent,
-    TimepickerComponent,
-    ToastComponent,
+    declarations: [
+        AccordionComponent,
+        AlertComponent,
+        NgbdAlertSelfclosing,
+        ButtonsComponent,
+        CarouselComponent,
+        CollapseComponent,
+        DatepickerComponent,
+        DropdownComponent,
+        ModalComponent,
+        NgbdModalOptions,
+        NavComponent,
+        PaginationComponent,
+        ProgressBarComponent,
+        TableComponent,
+        TimepickerComponent,
+        ToastComponent,
+        ToastsContainer,
+        TooltipComponent,
+        PopoversComponent
+    ],
+  exports: [
     ToastsContainer,
-    TooltipComponent,
-    PopoversComponent
+    ToastComponent
   ],
-  imports: [
-  CommonModule,
-    NgComponentsRoutingModule,
-    NgbModule,
-    FormsModule,
-    ReactiveFormsModule
-  ]
+    imports: [
+        CommonModule,
+        NgComponentsRoutingModule,
+        NgbModule,
+        FormsModule,
+        ReactiveFormsModule
+    ]
 })
 export class NgComponentsModule { }

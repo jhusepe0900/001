@@ -12,6 +12,18 @@ import { ClientScreenComponent } from './clients/client-screen/client-screen.com
 import { ClientScreenListComponent } from './clients/client-screen-list/client-screen-list.component';
 import { OrdersScreenConfirmadosComponent } from './orders/orders-screen-confirmados/orders-screen-confirmados.component';
 import { ClientModalListPruebaComponent } from './clients/client-modal-list-prueba/client-modal-list-prueba.component';
+import {NgComponentsModule} from "../ng-components/ng-components.module";
+import { OrdersScreenCrearOrdenComponent } from './orders/orders-screen-crear-orden/orders-screen-crear-orden.component';
+import {NgbDropdownModule} from "@ng-bootstrap/ng-bootstrap";
+import {FormsModule} from "@angular/forms";
+import { CompraComponent } from './compra/compra.component';
+import { SaldosComponent } from './saldos/saldos.component';
+import { ExceltestComponent } from './exceltest/exceltest.component';
+import { PantallaDespachoTiendaComponent } from './pantalla-despacho-tienda/pantalla-despacho-tienda.component';
+import { PantallaDespachoCejaComponent } from './pantalla-despacho-ceja/pantalla-despacho-ceja.component';
+import { PantallaDespachoVentillaComponent } from './pantalla-despacho-ventilla/pantalla-despacho-ventilla.component';
+import { DetallesConfirmadosComponent } from './detalles-confirmados/detalles-confirmados.component';
+import { AutoSumDirective } from './auto-sum.directive';
 
 
 @NgModule({
@@ -25,11 +37,23 @@ import { ClientModalListPruebaComponent } from './clients/client-modal-list-prue
     ClientScreenComponent,
     ClientScreenListComponent,
     OrdersScreenConfirmadosComponent,
-    ClientModalListPruebaComponent
+    ClientModalListPruebaComponent,
+    OrdersScreenCrearOrdenComponent,
+    CompraComponent,
+    SaldosComponent,
+    ExceltestComponent,
+    PantallaDespachoTiendaComponent,
+    PantallaDespachoCejaComponent,
+    PantallaDespachoVentillaComponent,
+    DetallesConfirmadosComponent,
+    AutoSumDirective
   ],
   imports: [
     CommonModule,
-    EcommerceRoutingModule
+    EcommerceRoutingModule,
+    NgComponentsModule,
+    NgbDropdownModule,
+    FormsModule
   ]
 })
 export class EcommerceModule { }
